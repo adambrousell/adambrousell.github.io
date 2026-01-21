@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam B - Operations & Data Analytics Professional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            background: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #2a5298;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #1e3c72;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 0.5rem;
+        }
+        
+        h3 {
+            color: #2a5298;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid #2a5298;
+        }
+        
+        .skill-category h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+        }
+        
+        .skill-category li {
+            padding: 0.3rem 0;
+            color: #555;
+        }
+        
+        .skill-category li:before {
+            content: "▸ ";
+            color: #2a5298;
+            font-weight: bold;
+        }
+        
+        .experience-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: #1e3c72;
+            font-size: 1.2rem;
+        }
+        
+        .company {
+            color: #2a5298;
+            font-weight: 500;
+        }
+        
+        .date {
+            color: #777;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2a5298;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .project-card h4 {
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: #2a5298;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #1e3c72;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 2rem 1.5rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adam B</h1>
+        <p>Operations & Restaurant Management Professional Transitioning to Data Analysis</p>
+    </header>
+    
+            <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Operations and restaurant management professional with 15+ years of experience transitioning into data analysis. I hold a B.S. in Supply Chain Management from Lehigh University and have completed the Google Data Analytics Professional Certificate. With a strong foundation in supply chain management, financial analysis, and people analytics, I specialize in translating operational data into clear, actionable insights using Excel, SQL, and Power BI.</p>
+            <p style="margin-top: 1rem;">Throughout my career, I've managed P&L responsibilities, labor forecasting, inventory optimization, and process improvement initiatives across multiple high-volume restaurant operations in Monmouth County, NJ. My background also includes accounting experience with audit engagements and inventory verification, providing me with a unique combination of operational expertise and financial acumen.</p>
+            <p style="margin-top: 1rem;">I'm seeking an operations analyst or business analytics role where my analytical skills, business knowledge, and 15 years of real-world operational experience can drive smarter decisions and measurable results.</p>
+        </section>
+        
+        <section id="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Data Analysis Tools</h4>
+                    <ul>
+                        <li>Microsoft Excel (Advanced)</li>
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Operations Management</h4>
+                    <ul>
+                        <li>Supply Chain Management</li>
+                        <li>Process Optimization</li>
+                        <li>Inventory Control</li>
+                        <li>Vendor Relations</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Analytics & Insights</h4>
+                    <ul>
+                        <li>People Analytics</li>
+                        <li>Business Intelligence</li>
+                        <li>KPI Development</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Team Management</li>
+                        <li>Cross-functional Collaboration</li>
+                        <li>Strategic Planning</li>
+                        <li>Stakeholder Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">General Manager / Restaurant Operations Manager</div>
+                <div class="company">Multiple Full-Service Restaurants | Monmouth County, NJ</div>
+                <div class="date">December 2010 - December 2025</div>
+                <p style="font-style: italic; color: #666; margin-bottom: 0.8rem;">Tre Pizza, Pasta & Beer Garden • Taka Japanese Bar, Restaurant & Lounge • Stella Marina Bar & Restaurant • Fresh • Dolce Fantasia • Nanna's Kitchen</p>
+                
+                <p><strong>Core Responsibilities:</strong> KPI ownership, budgeting & P&L exposure, labor forecasting, process improvement, vendor & inventory management</p>
+                
+                <ul style="margin-top: 0.8rem; margin-left: 1.5rem;">
+                    <li>Led end-to-end operations, inventory management, and procurement for high-volume, full-service restaurant environments</li>
+                    <li>Managed demand-driven ordering and replenishment of food, beverage, alcohol, paper goods, wares, and disposables to support fluctuating customer demand</li>
+                    <li>Coordinated with multiple vendors to ensure on-time delivery, quality standards, and cost control</li>
+                    <li>Analyzed sales trends and seasonal patterns to support forecasting, labor planning, and inventory optimization</li>
+                    <li>Oversaw staffing of 50–60+ employees, aligning workforce capacity with operational demand during peak and off-peak periods</li>
+                    <li>Executed weekly payroll and labor cost tracking, supporting operational budgeting and financial controls</li>
+                    <li>Reduced waste and stockouts through improved inventory controls and ordering processes</li>
+                    <li>Planned and resourced private events, coordinating staffing, materials, and delivery timelines to meet service requirements</li>
+                    <li>Collaborated with ownership on process improvements to streamline operations and improve efficiency</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Staff Accountant</div>
+                <div class="company">KML & Associates, LLC | Little Silver, NJ</div>
+                <div class="date">February 2008 - January 2010</div>
+                <ul style="margin-top: 0.8rem; margin-left: 1.5rem;">
+                    <li>Prepared personal and business tax returns to be filed with federal and state reporting agencies</li>
+                    <li>Assisted senior staff with work-paper preparation on compilation, review, and audit engagements</li>
+                    <li>Served as field examiner for commercial loan examination services, assisting with work-paper preparation on audit engagements for large, multi-national commercial banks with focus on inventory and AR-backed collateral loans</li>
+                    <li>Solely responsible for conducting independent physical inventory audit engagements to verify record integrity</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <h2>Education & Certifications</h2>
+            
+            <div class="experience-item">
+                <div class="job-title">B.S. in Supply Chain Management</div>
+                <div class="company">Lehigh University | Bethlehem, PA</div>
+                <div class="date">Graduated December 2007</div>
+            </div>
+            
+            <div class="experience-item" style="border-bottom: none; padding-bottom: 0;">
+                <div class="job-title">Google Data Analytics Professional Certificate</div>
+                <div class="company">Google (via Coursera)</div>
+                <div class="date">Completed 2024</div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Portfolio Projects</h2>
+            
+            <div class="project-card">
+                <h4>Restaurant Performance Dashboard (Power BI)</h4>
+                <p>Designed an interactive dashboard tracking daily sales, labor costs, and food waste metrics. Enabled management to identify trends and make data-driven staffing and menu decisions, reducing waste by 15%.</p>
+            </div>
+            
+            <div class="project-card">
+                <h4>Supply Chain Analysis (SQL & Excel)</h4>
+                <p>Analyzed vendor delivery performance and pricing data using SQL queries and Excel pivot tables. Identified cost-saving opportunities that reduced procurement expenses by 12% annually.</p>
+            </div>
+            
+            <div class="project-card">
+                <h4>Employee Scheduling Optimization</h4>
+                <p>Built Excel-based scheduling model using historical sales data and labor requirements. Optimized staff allocation to match customer demand patterns, improving labor efficiency by 18%.</p>
+            </div>
+            
+            <div class="project-card">
+                <h4>Inventory Forecasting Model</h4>
+                <p>Created predictive model for inventory ordering based on seasonal trends and historical consumption data. Reduced stockouts by 25% while minimizing excess inventory.</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Let's connect and discuss how I can contribute to your team.</p>
+                <p style="margin-top: 1rem;">
+                    <a href="mailto:your.email@example.com">Email</a> |
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+                    <a href="tel:+1234567890">Phone</a>
+                </p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 Adam B. All rights reserved.</p>
+    </footer>
+</body>
+</html>
