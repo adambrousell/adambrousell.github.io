@@ -308,7 +308,7 @@
         
         /* Sections */
         section {
-            padding: 3rem 2rem;
+            padding: 2rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
         }
