@@ -920,5 +920,4 @@
         window.location.href = 'mailto:' + user + '@' + domain;
     });
 </script>
-</body>
-</html>
+
