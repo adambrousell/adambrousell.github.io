@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -893,24 +892,33 @@
             </div>
         </section>
         
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header">
-                <div class="section-tag">LET'S CONNECT</div>
-                <h2>Get In Touch</h2>
-                <p class="section-description">Ready to bring analytical rigor and operational expertise to your team. Let's discuss how I can drive data-informed decisions and measurable results.</p>
-            </div>
-            
-            <div class="cta-buttons" style="margin-top: 3rem;">
-                <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
-                <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">LinkedIn</a>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Adam Brousell. All rights reserved.</p>
-        </footer>
+       <!-- Contact Section -->
+<section id="contact">
+    <div class="section-header">
+        <div class="section-tag">LET'S CONNECT</div>
+        <h2>Get In Touch</h2>
+        <p class="section-description">Ready to bring analytical rigor and operational expertise to your team. Let's discuss how I can drive data-informed decisions and measurable results.</p>
     </div>
+    
+    <div class="cta-buttons" style="margin-top: 3rem;">
+        <a href="#" class="btn btn-primary" id="emailBtn">Email Me</a>
+        <a href="https://linkedin.com/in/adam-brousell" class="btn btn-secondary" target="_blank">LinkedIn</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Adam Brousell. All rights reserved.</p>
+</footer>
+
+<script>
+    // Masked email - decoded on click
+    document.getElementById('emailBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        const user = 'adam.brousell';
+        const domain = 'gmail.com';
+        window.location.href = 'mailto:' + user + '@' + domain;
+    });
+</script>
 </body>
 </html>
