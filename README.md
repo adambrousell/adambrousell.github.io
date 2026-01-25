@@ -308,7 +308,7 @@
         h1 {
             font-size: clamp(3rem, 8vw, 6rem);
             font-weight: 900;
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
             background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #60a5fa 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -320,7 +320,7 @@
         .hero-subtitle {
             font-size: clamp(1.25rem, 3vw, 1.75rem);
             color: #9ca3af;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
             font-weight: 400;
             max-width: 800px;
             margin-left: auto;
@@ -402,14 +402,14 @@
         
         /* Sections */
         section {
-            padding: 2rem 1rem;
+            padding: 1rem .5rem;
             max-width: 1400px;
             margin: 0 auto;
         }
         
         .section-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 1rem;
         }
         
         .section-tag {
@@ -446,7 +446,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 1rem;
         }
         
         .bento-card {
@@ -701,7 +701,7 @@
         
         /* Footer */
         footer {
-            padding: 4rem 2rem;
+            padding: 2rem 1rem;
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             margin-top: 6rem;
@@ -878,7 +878,7 @@
                     </div>
                     <div class="feature-content">
                         <h3>From Operations to Analytics</h3>
-                        <p>With a B.S. in Supply Chain Management from Lehigh University and Google Data Analytics certification, I've spent 15+ years managing high-volume restaurant operations while developing expertise in data analysis, forecasting, and business intelligence.</p>
+                        <p>With a Bachelor of Science in Supply Chain Management from Lehigh University and Google Data Analytics certification, I've spent 15+ years managing high-volume restaurant operations while developing expertise in data analysis, forecasting, and business intelligence.</p>
                         <p style="margin-top: 1rem;">My unique background combines P&L ownership, inventory optimization, and people analytics with technical proficiency in Excel, SQL, and Power BI.</p>
                     </div>
                 </div>
@@ -953,7 +953,7 @@
             <div class="timeline">
                 <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
                     <div class="timeline-date">DEC 2007</div>
-                    <div class="timeline-title">B.S. in Supply Chain Management</div>
+                    <div class="timeline-title">Bachelor of Science in Supply Chain Management</div>
                     <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
                 </div>
             </div>
