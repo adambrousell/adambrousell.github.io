@@ -175,6 +175,100 @@
             100% { stroke-dashoffset: 20; }
         }
         
+        /* Floating Geometric Shapes */
+        .geo-shape {
+            position: absolute;
+            opacity: 0.06;
+            animation: shapeFloat 35s infinite ease-in-out;
+        }
+        
+        .geo-triangle {
+            width: 0;
+            height: 0;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            border-bottom: 100px solid rgba(59, 130, 246, 0.3);
+            border-top: none;
+        }
+        
+        .geo-hexagon {
+            width: 80px;
+            height: 140px;
+            background: rgba(59, 130, 246, 0.15);
+            position: relative;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        }
+        
+        /* Data-Centric Shapes */
+        .bell-curve {
+            width: 200px;
+            height: 120px;
+        }
+        
+        .bell-path {
+            fill: none;
+            stroke: #3b82f6;
+            stroke-width: 2;
+            opacity: 0.4;
+        }
+        
+        .bar-chart-shape {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            height: 100px;
+            width: 150px;
+        }
+        
+        .bar-item {
+            flex: 1;
+            background: linear-gradient(to top, rgba(59, 130, 246, 0.3), rgba(96, 165, 250, 0.2));
+            border-radius: 3px 3px 0 0;
+        }
+        
+        .scatter-plot {
+            width: 120px;
+            height: 120px;
+            position: relative;
+        }
+        
+        .scatter-dot {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #3b82f6;
+            border-radius: 50%;
+            opacity: 0.4;
+        }
+        
+        .shape-1 { left: 8%; top: 12%; animation-delay: 0s; animation-duration: 38s; }
+        .shape-2 { right: 12%; top: 22%; animation-delay: 5s; animation-duration: 42s; }
+        .shape-3 { left: 18%; bottom: 18%; animation-delay: 10s; animation-duration: 36s; }
+        .shape-4 { right: 8%; bottom: 28%; animation-delay: 15s; animation-duration: 40s; }
+        .shape-5 { left: 45%; top: 8%; animation-delay: 20s; animation-duration: 44s; }
+        .shape-6 { right: 35%; bottom: 12%; animation-delay: 25s; animation-duration: 39s; }
+        .shape-7 { left: 25%; top: 45%; animation-delay: 12s; animation-duration: 41s; }
+        .shape-8 { right: 22%; top: 58%; animation-delay: 18s; animation-duration: 37s; }
+        
+        @keyframes shapeFloat {
+            0%, 100% { 
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 0.06;
+            }
+            25% {
+                transform: translate(30px, -40px) rotate(15deg);
+                opacity: 0.10;
+            }
+            50% { 
+                transform: translate(60px, -20px) rotate(-10deg);
+                opacity: 0.08;
+            }
+            75% {
+                transform: translate(30px, 20px) rotate(8deg);
+                opacity: 0.10;
+            }
+        }
+        
         /* Content Wrapper */
         .content {
             position: relative;
@@ -686,14 +780,70 @@
                 <path class="graph-path" d="M 10,90 Q 110,30 190,70 T 340,110 T 490,60"/>
             </svg>
         </div>
+        
+        <!-- Floating Geometric Shapes -->
+        <div class="geo-shape bell-curve shape-1">
+            <svg viewBox="0 0 200 120">
+                <path class="bell-path" d="M 10,110 Q 50,110 70,80 Q 100,20 130,80 Q 150,110 190,110"/>
+            </svg>
+        </div>
+        
+        <div class="geo-shape bar-chart-shape shape-2">
+            <div class="bar-item" style="height: 50%;"></div>
+            <div class="bar-item" style="height: 75%;"></div>
+            <div class="bar-item" style="height: 90%;"></div>
+            <div class="bar-item" style="height: 65%;"></div>
+            <div class="bar-item" style="height: 80%;"></div>
+        </div>
+        
+        <div class="geo-shape geo-hexagon shape-3"></div>
+        
+        <div class="geo-shape scatter-plot shape-4">
+            <div class="scatter-dot" style="left: 20%; top: 60%;"></div>
+            <div class="scatter-dot" style="left: 35%; top: 45%;"></div>
+            <div class="scatter-dot" style="left: 50%; top: 30%;"></div>
+            <div class="scatter-dot" style="left: 65%; top: 50%;"></div>
+            <div class="scatter-dot" style="left: 80%; top: 35%;"></div>
+            <div class="scatter-dot" style="left: 25%; top: 75%;"></div>
+            <div class="scatter-dot" style="left: 70%; top: 65%;"></div>
+            <div class="scatter-dot" style="left: 45%; top: 55%;"></div>
+        </div>
+        
+        <div class="geo-shape bell-curve shape-5">
+            <svg viewBox="0 0 200 120">
+                <path class="bell-path" d="M 10,110 Q 50,110 70,80 Q 100,20 130,80 Q 150,110 190,110"/>
+            </svg>
+        </div>
+        
+        <div class="geo-shape bar-chart-shape shape-6">
+            <div class="bar-item" style="height: 60%;"></div>
+            <div class="bar-item" style="height: 85%;"></div>
+            <div class="bar-item" style="height: 70%;"></div>
+            <div class="bar-item" style="height: 95%;"></div>
+            <div class="bar-item" style="height: 55%;"></div>
+        </div>
+        
+        <div class="geo-shape geo-triangle shape-7"></div>
+        
+        <div class="geo-shape scatter-plot shape-8">
+            <div class="scatter-dot" style="left: 15%; top: 70%;"></div>
+            <div class="scatter-dot" style="left: 30%; top: 40%;"></div>
+            <div class="scatter-dot" style="left: 55%; top: 25%;"></div>
+            <div class="scatter-dot" style="left: 70%; top: 55%;"></div>
+            <div class="scatter-dot" style="left: 85%; top: 45%;"></div>
+            <div class="scatter-dot" style="left: 40%; top: 80%;"></div>
+            <div class="scatter-dot" style="left: 60%; top: 60%;"></div>
+        </div>
     </div>
     
     <!-- Navigation -->
-    <nav>
+            <nav>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -830,12 +980,45 @@
                 </div>
                 
                 <div class="timeline-item">
+                    <div class="timeline-date">MAR 2004 - SEP 2007</div>
+                    <div class="timeline-title">Ride Operations Supervisor</div>
+                    <div class="timeline-company">Six Flags Great Adventure Resort | Jackson, NJ</div>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Directed, motivated, trained, scheduled, and audited a professional staff of 50+ in a fast-paced service environment</li>
+                        <li style="padding: 0.3rem 0;">→ Enhanced customer experience by creating an environment emphasizing safety and motivating employees through strategic position rotation and workload balancing</li>
+                        <li style="padding: 0.3rem 0;">→ Ensured smooth operations while enforcing safety regulations through continuous communication with supervisors and routine safety procedures</li>
+                        <li style="padding: 0.3rem 0;">→ Performed critical first responder role during emergency situations, coordinating employee evacuations and conferring with maintenance personnel</li>
+                        <li style="padding: 0.3rem 0;">→ Auditing Supervisor: Led newly created task force to target deficiencies in training of front-line workers in Rides Department (2007)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-header">
+                <div class="section-tag">EDUCATION</div>
+                <h2>Academic Background</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
                     <div class="timeline-date">DEC 2007</div>
                     <div class="timeline-title">B.S. in Supply Chain Management</div>
                     <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
                 </div>
-                
-                <div class="timeline-item">
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="section-header">
+                <div class="section-tag">CERTIFICATIONS</div>
+                <h2>Professional Development</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
                     <div class="timeline-date">2024</div>
                     <div class="timeline-title">Google Data Analytics Professional Certificate</div>
                     <div class="timeline-company">Google (via Coursera)</div>
@@ -902,7 +1085,7 @@
             </div>
             
             <div class="cta-buttons" style="margin-top: 3rem;">
-                <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
+                <a href="mailto:admin@adamb.info" class="btn btn-primary">Email Me</a>
                 <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">LinkedIn</a>
             </div>
         </section>
