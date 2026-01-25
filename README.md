@@ -286,14 +286,14 @@
         
         .hero-content {
             text-align: center;
-            padding: 2rem;
+            padding: 1rem;
             max-width: 1200px;
             z-index: 2;
         }
         
         .hero-badge {
             display: inline-block;
-            padding: 0.5rem 1.5rem;
+            padding: 0.25rem 0.75rem;
             background: rgba(59, 130, 246, 0.1);
             border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: 50px;
@@ -335,7 +335,7 @@
         }
         
         .btn {
-            padding: 1rem 2.5rem;
+            padding: .5rem 1.25rem;
             border-radius: 12px;
             font-weight: 600;
             text-decoration: none;
@@ -375,7 +375,7 @@
             transform: translateX(-50%);
             background: rgba(17, 24, 39, 0.8);
             backdrop-filter: blur(20px);
-            padding: 1rem 2rem;
+            padding: .5rem 1rem;
             border-radius: 50px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 1000;
@@ -402,7 +402,7 @@
         
         /* Sections */
         section {
-            padding: 6rem 2rem;
+            padding: 2rem 1rem;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -454,7 +454,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
-            padding: 2.5rem;
+            padding: 1rem;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
