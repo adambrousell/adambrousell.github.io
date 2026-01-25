@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -226,7 +227,7 @@
         .hero-subtitle {
             font-size: clamp(1.25rem, 3vw, 1.75rem);
             color: #9ca3af;
-            margin-bottom: 2rem; /* reduced from 3rem */
+            margin-bottom: 3rem;
             font-weight: 400;
             max-width: 800px;
             margin-left: auto;
@@ -288,42 +289,34 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
         }
         
-        /* Ensure nav items are vertically centered */
         nav ul {
             list-style: none;
             display: flex;
             gap: 2rem;
-            align-items: center; /* added: vertically center the list items */
-            margin: 0; /* ensure no default margins */
-            padding: 0; /* ensure no default padding */
         }
         
-        /* Make links inline-flex and center their text to avoid baseline shifts */
         nav a {
             color: #9ca3af;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
             transition: color 0.3s;
-            display: inline-flex; /* added */
-            align-items: center;   /* added */
-            line-height: 1;        /* added: stabilize vertical alignment */
         }
         
         nav a:hover {
             color: #fff;
         }
         
-        /* Sections - reduced vertical spacing for a tighter layout */
+        /* Sections */
         section {
-            padding: 4rem 2rem; /* reduced from 6rem */
+            padding: 6rem 2rem;
             max-width: 1400px;
             margin: 0 auto;
         }
         
         .section-header {
             text-align: center;
-            margin-bottom: 2rem; /* reduced from 4rem */
+            margin-bottom: 4rem;
         }
         
         .section-tag {
@@ -349,7 +342,7 @@
         }
         
         .section-description {
-            font-size: 1.1rem; /* slightly reduced */
+            font-size: 1.25rem;
             color: #9ca3af;
             max-width: 700px;
             margin: 0 auto;
@@ -359,8 +352,8 @@
         .bento-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem; /* reduced gap */
-            margin-top: 1.5rem; /* reduced from 3rem */
+            gap: 2rem;
+            margin-top: 3rem;
         }
         
         .bento-card {
@@ -368,7 +361,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
-            padding: 2rem; /* slightly reduced padding */
+            padding: 2.5rem;
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
@@ -413,7 +406,7 @@
         
         .bento-card p, .bento-card ul {
             color: #9ca3af;
-            line-height: 1.6; /* slightly tighter */
+            line-height: 1.8;
             position: relative;
             z-index: 1;
         }
@@ -423,7 +416,7 @@
         }
         
         .bento-card li {
-            padding: 0.4rem 0;
+            padding: 0.5rem 0;
             padding-left: 1.5rem;
             position: relative;
         }
@@ -442,14 +435,14 @@
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
             display: flex;
             align-items: center;
-            gap: 2rem; /* reduced gap */
-            padding: 2rem; /* reduced padding */
+            gap: 3rem;
+            padding: 3rem;
         }
         
         .feature-image {
             flex: 1;
-            min-width: 260px;
-            height: 260px;
+            min-width: 300px;
+            height: 300px;
             background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
             border-radius: 20px;
             position: relative;
@@ -471,8 +464,7 @@
         /* Timeline */
         .timeline {
             position: relative;
-            padding-left: 2.5rem; /* slightly reduced */
-            margin-top: 1.5rem; /* reduced spacing */
+            padding-left: 3rem;
         }
         
         .timeline::before {
@@ -487,14 +479,14 @@
         
         .timeline-item {
             position: relative;
-            margin-bottom: 2rem; /* reduced from 3rem */
-            padding-left: 1.5rem;
+            margin-bottom: 3rem;
+            padding-left: 2rem;
         }
         
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -2.75rem;
+            left: -3.5rem;
             top: 0;
             width: 12px;
             height: 12px;
@@ -507,33 +499,32 @@
             color: #60a5fa;
             font-weight: 600;
             font-size: 0.9rem;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.5rem;
         }
         
         .timeline-title {
-            font-size: 1.25rem; /* slightly reduced */
+            font-size: 1.5rem;
             font-weight: 700;
             color: white;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.5rem;
         }
         
         .timeline-company {
             color: #93c5fd;
             font-weight: 600;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
         
         .timeline-description {
             color: #9ca3af;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         
         /* Project Cards */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem; /* reduced gap */
-            margin-top: 1.5rem;
+            gap: 2rem;
         }
         
         .project-card {
@@ -553,7 +544,7 @@
         
         .project-image {
             width: 100%;
-            height: 180px;
+            height: 200px;
             background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
             position: relative;
             overflow: hidden;
@@ -568,32 +559,32 @@
         }
         
         .project-content {
-            padding: 1.5rem; /* reduced padding */
+            padding: 2rem;
         }
         
         .project-content h4 {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: white;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
         
         .project-content p {
             color: #9ca3af;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         
         /* Stats Section */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
+            gap: 2rem;
+            margin-top: 3rem;
         }
         
         .stat-card {
             text-align: center;
-            padding: 1.5rem;
+            padding: 2rem;
             background: rgba(59, 130, 246, 0.1);
             border: 1px solid rgba(59, 130, 246, 0.2);
             border-radius: 20px;
@@ -601,7 +592,7 @@
         }
         
         .stat-number {
-            font-size: 2.25rem;
+            font-size: 3rem;
             font-weight: 900;
             background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
             -webkit-background-clip: text;
@@ -611,16 +602,16 @@
         
         .stat-label {
             color: #9ca3af;
-            font-size: 0.95rem;
+            font-size: 1rem;
             margin-top: 0.5rem;
         }
         
         /* Footer */
         footer {
-            padding: 3rem 2rem; /* slightly reduced */
+            padding: 4rem 2rem;
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 3rem; /* reduced */
+            margin-top: 6rem;
         }
         
         footer p {
@@ -642,7 +633,7 @@
             }
             
             .timeline {
-                padding-left: 1.5rem;
+                padding-left: 2rem;
             }
         }
     </style>
@@ -715,7 +706,7 @@
             <div class="hero-content">
                 <div class="hero-badge">DATA DRIVEN PROFESSIONAL</div>
                 <h1>Adam Brousell</h1>
-                <p class="hero-subtitle">Transforming 15+ years of operations expertise into data-driven insights. Specialized in supply chain analytics, business intelligence, and operational optimiz[...]
+                <p class="hero-subtitle">Transforming 15+ years of operations expertise into data-driven insights. Specialized in supply chain analytics, business intelligence, and operational optimization.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -738,59 +729,9 @@
                     </div>
                     <div class="feature-content">
                         <h3>From Operations to Analytics</h3>
-                        <p>With a B.S. in Supply Chain Management from Lehigh University and Google Data Analytics certification, I've spent 15+ years managing high-volume restaurant operations while [...]
-                        <p style="margin-top: 1rem;">My unique background combines P&L ownership, inventory optimization, and people analytics with technical proficiency in Excel, SQL, and Power BI.</[...]
+                        <p>With a B.S. in Supply Chain Management from Lehigh University and Google Data Analytics certification, I've spent 15+ years managing high-volume restaurant operations while developing expertise in data analysis, forecasting, and business intelligence.</p>
+                        <p style="margin-top: 1rem;">My unique background combines P&L ownership, inventory optimization, and people analytics with technical proficiency in Excel, SQL, and Power BI.</p>
                     </div>
-                </div>
-            </div>
-
-            <!-- Career Path moved here and reordered (Education first, Google certificate second) -->
-            <div class="section-header" style="margin-top: 1.5rem;">
-                <div class="section-tag">CAREER PATH</div>
-                <h2>Professional Journey</h2>
-            </div>
-
-            <div class="timeline">
-                <!-- Education first -->
-                <div class="timeline-item">
-                    <div class="timeline-date">DEC 2007</div>
-                    <div class="timeline-title">B.S. in Supply Chain Management</div>
-                    <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
-                </div>
-
-                <!-- Google Data Analytics certificate second -->
-                <div class="timeline-item">
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-title">Google Data Analytics Professional Certificate</div>
-                    <div class="timeline-company">Google (via Coursera)</div>
-                </div>
-
-                <!-- Then professional experience -->
-                <div class="timeline-item">
-                    <div class="timeline-date">DEC 2010 - DEC 2025</div>
-                    <div class="timeline-title">General Manager / Restaurant Operations Manager</div>
-                    <div class="timeline-company">Multiple Full-Service Restaurants | Monmouth County, NJ</div>
-                    <p class="timeline-description" style="font-style: italic; margin-bottom: 0.8rem;">Tre Pizza • Taka Japanese Bar • Stella Marina • Fresh • Dolce Fantasia • Nanna's Kitchen<[...]
-                    <p class="timeline-description"><strong>Core Focus:</strong> KPI ownership, budgeting & P&L exposure, labor forecasting, process improvement, vendor & inventory management</p>
-                    <ul style="margin-top: 0.8rem; list-style: none; color: #9ca3af; padding-left: 0;">
-                        <li style="padding: 0.25rem 0;">→ Led end-to-end operations and inventory management for high-volume environments</li>
-                        <li style="padding: 0.25rem 0;">→ Managed 50-60+ employees, aligning workforce with demand patterns</li>
-                        <li style="padding: 0.25rem 0;">→ Analyzed sales trends and seasonal patterns for forecasting and optimization</li>
-                        <li style="padding: 0.25rem 0;">→ Reduced waste and stockouts through improved inventory controls</li>
-                        <li style="padding: 0.25rem 0;">→ Executed weekly payroll and labor cost tracking for budget management</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-date">FEB 2008 - JAN 2010</div>
-                    <div class="timeline-title">Staff Accountant</div>
-                    <div class="timeline-company">KML & Associates, LLC | Little Silver, NJ</div>
-                    <ul style="margin-top: 0.8rem; list-style: none; color: #9ca3af; padding-left: 0;">
-                        <li style="padding: 0.25rem 0;">→ Prepared personal and business tax returns for federal and state agencies</li>
-                        <li style="padding: 0.25rem 0;">→ Assisted with audit engagements for large multi-national commercial banks</li>
-                        <li style="padding: 0.25rem 0;">→ Conducted independent physical inventory audits to verify record integrity</li>
-                        <li style="padding: 0.25rem 0;">→ Field examiner for commercial loan examination services</li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -853,6 +794,55 @@
             </div>
         </section>
         
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <div class="section-tag">CAREER PATH</div>
+                <h2>Professional Journey</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">DEC 2010 - DEC 2025</div>
+                    <div class="timeline-title">General Manager / Restaurant Operations Manager</div>
+                    <div class="timeline-company">Multiple Full-Service Restaurants | Monmouth County, NJ</div>
+                    <p class="timeline-description" style="font-style: italic; margin-bottom: 1rem;">Tre Pizza • Taka Japanese Bar • Stella Marina • Fresh • Dolce Fantasia • Nanna's Kitchen</p>
+                    <p class="timeline-description"><strong>Core Focus:</strong> KPI ownership, budgeting & P&L exposure, labor forecasting, process improvement, vendor & inventory management</p>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Led end-to-end operations and inventory management for high-volume environments</li>
+                        <li style="padding: 0.3rem 0;">→ Managed 50-60+ employees, aligning workforce with demand patterns</li>
+                        <li style="padding: 0.3rem 0;">→ Analyzed sales trends and seasonal patterns for forecasting and optimization</li>
+                        <li style="padding: 0.3rem 0;">→ Reduced waste and stockouts through improved inventory controls</li>
+                        <li style="padding: 0.3rem 0;">→ Executed weekly payroll and labor cost tracking for budget management</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">FEB 2008 - JAN 2010</div>
+                    <div class="timeline-title">Staff Accountant</div>
+                    <div class="timeline-company">KML & Associates, LLC | Little Silver, NJ</div>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Prepared personal and business tax returns for federal and state agencies</li>
+                        <li style="padding: 0.3rem 0;">→ Assisted with audit engagements for large multi-national commercial banks</li>
+                        <li style="padding: 0.3rem 0;">→ Conducted independent physical inventory audits to verify record integrity</li>
+                        <li style="padding: 0.3rem 0;">→ Field examiner for commercial loan examination services</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">DEC 2007</div>
+                    <div class="timeline-title">B.S. in Supply Chain Management</div>
+                    <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Google Data Analytics Professional Certificate</div>
+                    <div class="timeline-company">Google (via Coursera)</div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Projects Section -->
         <section id="projects">
             <div class="section-header">
@@ -867,7 +857,7 @@
                     </div>
                     <div class="project-content">
                         <h4>Restaurant Performance Dashboard</h4>
-                        <p>Designed interactive Power BI dashboard tracking daily sales, labor costs, and food waste metrics. Enabled data-driven staffing and menu decisions, reducing waste by 15%.</p[...]
+                        <p>Designed interactive Power BI dashboard tracking daily sales, labor costs, and food waste metrics. Enabled data-driven staffing and menu decisions, reducing waste by 15%.</p>
                     </div>
                 </div>
                 
@@ -877,7 +867,7 @@
                     </div>
                     <div class="project-content">
                         <h4>Supply Chain Analysis</h4>
-                        <p>Analyzed vendor delivery performance and pricing data using SQL queries and Excel pivot tables. Identified cost-saving opportunities reducing procurement expenses by 12% ann[...]
+                        <p>Analyzed vendor delivery performance and pricing data using SQL queries and Excel pivot tables. Identified cost-saving opportunities reducing procurement expenses by 12% annually.</p>
                     </div>
                 </div>
                 
@@ -887,7 +877,7 @@
                     </div>
                     <div class="project-content">
                         <h4>Employee Scheduling Optimization</h4>
-                        <p>Built Excel-based scheduling model using historical sales data and labor requirements. Optimized staff allocation to match demand patterns, improving labor efficiency by 18%[...]
+                        <p>Built Excel-based scheduling model using historical sales data and labor requirements. Optimized staff allocation to match demand patterns, improving labor efficiency by 18%.</p>
                     </div>
                 </div>
                 
@@ -911,7 +901,7 @@
                 <p class="section-description">Ready to bring analytical rigor and operational expertise to your team. Let's discuss how I can drive data-informed decisions and measurable results.</p>
             </div>
             
-            <div class="cta-buttons" style="margin-top: 1.5rem;">
+            <div class="cta-buttons" style="margin-top: 3rem;">
                 <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
                 <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">LinkedIn</a>
             </div>
@@ -924,4 +914,3 @@
     </div>
 </body>
 </html>
-```
