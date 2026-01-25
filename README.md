@@ -943,6 +943,38 @@
             </div>
         </section>
         
+        <!-- Education Section -->
+        <section id="education">
+            <div class="section-header">
+                <div class="section-tag">EDUCATION</div>
+                <h2>Academic Background</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
+                    <div class="timeline-date">DEC 2007</div>
+                    <div class="timeline-title">B.S. in Supply Chain Management</div>
+                    <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <div class="section-header">
+                <div class="section-tag">CERTIFICATIONS</div>
+                <h2>Professional Development</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Google Data Analytics Professional Certificate</div>
+                    <div class="timeline-company">Google (via Coursera)</div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Experience Section -->
         <section id="experience">
             <div class="section-header">
@@ -993,38 +1025,7 @@
             </div>
         </section>
         
-        <!-- Education Section -->
-        <section id="education">
-            <div class="section-header">
-                <div class="section-tag">EDUCATION</div>
-                <h2>Academic Background</h2>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
-                    <div class="timeline-date">DEC 2007</div>
-                    <div class="timeline-title">B.S. in Supply Chain Management</div>
-                    <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Certifications Section -->
-        <section id="certifications">
-            <div class="section-header">
-                <div class="section-tag">CERTIFICATIONS</div>
-                <h2>Professional Development</h2>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-title">Google Data Analytics Professional Certificate</div>
-                    <div class="timeline-company">Google (via Coursera)</div>
-                </div>
-            </div>
-        </section>
-        
+              
         <!-- Projects Section -->
         <section id="projects">
             <div class="section-header">
