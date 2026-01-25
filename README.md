@@ -1085,8 +1085,8 @@
             </div>
             
             <div class="cta-buttons" style="margin-top: 3rem;">
-                <a href="mailto:admin@adamb.info" class="btn btn-primary">Email Me</a>
-                <a href="https://linkedin.com/in/yourprofile" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                <a href="mailto:adam.brousell@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/adam-brousell" class="btn btn-secondary" target="_blank">LinkedIn</a>
             </div>
         </section>
         
