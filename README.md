@@ -971,6 +971,7 @@
                     <div class="timeline-date">2024</div>
                     <div class="timeline-title">Google Data Analytics Professional Certificate</div>
                     <div class="timeline-company">Google (via Coursera)</div>
+                   <div class="timeline-link"> https://www.coursera.org/account/accomplishments/specialization/UNFYUDREXP6A</div>
                 </div>
             </div>
         </section>
