@@ -469,8 +469,8 @@
                 <!-- AS 360 Featured -->
                 <div class="project-featured">
                     <div class="project-image">
-                        <div class="node-visual" style="perspective:800px;">
-                            <svg class="node-svg" viewBox="0 0 440 400" width="440" height="400" xmlns="http://www.w3.org/2000/svg" style="animation: nodeOrbit 20s ease-in-out infinite;">
+                        <div class="node-visual">
+                            <svg class="node-svg" viewBox="0 0 440 400" width="440" height="400" xmlns="http://www.w3.org/2000/svg" >
                                 <defs>
                                     <filter id="nGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
                                     <filter id="bigGlow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
@@ -503,11 +503,11 @@
                                 <!-- === THICK CONNECTORS: AS 360 center to each score === -->
                                 <!-- Glow layer (wide, blurred) -->
                                 <line x1="105" y1="310" x2="220" y2="200" stroke="#3b82f6" stroke-width="6" stroke-opacity="0.12" filter="url(#lineGlow)"/>
-                                <line x1="220" y1="75" x2="220" y2="200" stroke="#00e676" stroke-width="6" stroke-opacity="0.15" filter="url(#lineGlow)"/>
+                                <line x1="220" y1="75" x2="220" y2="200" stroke="#00e676" stroke-width="8" opacity="0.25"/>
                                 <line x1="335" y1="310" x2="220" y2="200" stroke="#ab47bc" stroke-width="6" stroke-opacity="0.1" filter="url(#lineGlow)"/>
                                 <!-- Animated dash layer -->
                                 <line x1="105" y1="310" x2="220" y2="200" class="flow-in" stroke="url(#cRide)" stroke-width="3" stroke-linecap="round"/>
-                                <line x1="220" y1="75" x2="220" y2="200" class="flow-in" stroke="url(#cSplash)" stroke-width="3" stroke-linecap="round" style="animation-delay:0.3s;"/>
+                                <line x1="220" y1="75" x2="220" y2="200" class="flow-in" stroke="#00e676" stroke-width="3" stroke-linecap="round" opacity="0.8" style="animation-delay:0.3s;"/>
                                 <line x1="335" y1="310" x2="220" y2="200" class="flow-in" stroke="url(#cPlay)" stroke-width="3" stroke-linecap="round" style="animation-delay:0.6s;"/>
 
                                 <!-- === TRAVELING PARTICLES along connectors === -->
