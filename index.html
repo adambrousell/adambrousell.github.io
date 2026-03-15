@@ -476,7 +476,7 @@
                                     <filter id="bigGlow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
                                     <filter id="lineGlow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
                                     <linearGradient id="cRide" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#3b82f6" stop-opacity="0.9"/><stop offset="100%" stop-color="#60a5fa" stop-opacity="0.3"/></linearGradient>
-                                    <linearGradient id="cSplash" x1="0" y1="1" x2="1" y2="0"><stop offset="0%" stop-color="#00e676" stop-opacity="0.8"/><stop offset="100%" stop-color="#66bb6a" stop-opacity="0.3"/></linearGradient>
+                                    <linearGradient id="cSplash" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00e676" stop-opacity="0.8"/><stop offset="100%" stop-color="#66bb6a" stop-opacity="0.3"/></linearGradient>
                                     <linearGradient id="cPlay" x1="1" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ce93d8" stop-opacity="0.8"/><stop offset="100%" stop-color="#ab47bc" stop-opacity="0.3"/></linearGradient>
                                     <style>
                                         @keyframes nodeOrbit { 0% { transform: rotateY(-8deg) rotateX(2deg); } 50% { transform: rotateY(8deg) rotateX(-2deg); } 100% { transform: rotateY(-8deg) rotateX(2deg); } }
@@ -503,41 +503,41 @@
                                 <!-- === THICK CONNECTORS: AS 360 center to each score === -->
                                 <!-- Glow layer (wide, blurred) -->
                                 <line x1="105" y1="310" x2="220" y2="200" stroke="#3b82f6" stroke-width="6" stroke-opacity="0.12" filter="url(#lineGlow)"/>
-                                <line x1="220" y1="125" x2="220" y2="156" stroke="#00e676" stroke-width="6" stroke-opacity="0.1" filter="url(#lineGlow)"/>
+                                <line x1="220" y1="75" x2="220" y2="200" stroke="#00e676" stroke-width="6" stroke-opacity="0.15" filter="url(#lineGlow)"/>
                                 <line x1="335" y1="310" x2="220" y2="200" stroke="#ab47bc" stroke-width="6" stroke-opacity="0.1" filter="url(#lineGlow)"/>
                                 <!-- Animated dash layer -->
                                 <line x1="105" y1="310" x2="220" y2="200" class="flow-in" stroke="url(#cRide)" stroke-width="3" stroke-linecap="round"/>
-                                <line x1="220" y1="125" x2="220" y2="156" class="flow-in" stroke="url(#cSplash)" stroke-width="3" stroke-linecap="round" style="animation-delay:0.3s;"/>
+                                <line x1="220" y1="75" x2="220" y2="200" class="flow-in" stroke="url(#cSplash)" stroke-width="3" stroke-linecap="round" style="animation-delay:0.3s;"/>
                                 <line x1="335" y1="310" x2="220" y2="200" class="flow-in" stroke="url(#cPlay)" stroke-width="3" stroke-linecap="round" style="animation-delay:0.6s;"/>
 
                                 <!-- === TRAVELING PARTICLES along connectors === -->
                                 <!-- Center to scores -->
                                 <circle r="3" fill="#60a5fa" filter="url(#nGlow)"><animate attributeName="cx" values="105;220" dur="2s" repeatCount="indefinite"/><animate attributeName="cy" values="310;200" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite"/></circle>
-                                <circle r="3" fill="#66bb6a" filter="url(#nGlow)"><animate attributeName="cx" values="220;220" dur="2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="cy" values="125;158" dur="2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="0.6s" repeatCount="indefinite"/></circle>
+                                <circle r="3" fill="#66bb6a" filter="url(#nGlow)"><animate attributeName="cx" values="220;220" dur="2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="cy" values="75;200" dur="2s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="0.6s" repeatCount="indefinite"/></circle>
                                 <circle r="3" fill="#ce93d8" filter="url(#nGlow)"><animate attributeName="cx" values="335;220" dur="2s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="cy" values="310;200" dur="2s" begin="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;1;0" dur="2s" begin="1.2s" repeatCount="indefinite"/></circle>
                                                                 <circle r="2.5" fill="#ce93d8" filter="url(#nGlow)"><animate attributeName="cx" values="245;310" dur="2.5s" begin="1s" repeatCount="indefinite"/><animate attributeName="cy" values="110;275" dur="2.5s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.5s" begin="1s" repeatCount="indefinite"/></circle>
                                 <circle r="2.5" fill="#93c5fd" filter="url(#nGlow)"><animate attributeName="cx" values="155;285" dur="2.5s" begin="0.7s" repeatCount="indefinite"/><animate attributeName="cy" values="320;320" dur="2.5s" begin="0.7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0.8;0" dur="2.5s" begin="0.7s" repeatCount="indefinite"/></circle>
 
                                 <!-- === SPLASH node (top) === -->
-                                <circle cx="220" cy="75" r="50" fill="rgba(0,230,118,0.05)" stroke="rgba(0,230,118,0.35)" stroke-width="2" style="animation: ringPulse 5s infinite 1s;"/>
+                                <circle cx="220" cy="75" r="50" fill="none" stroke="rgba(0,230,118,0.35)" stroke-width="2" style="animation: ringPulse 5s infinite 1s;"/>
                                 <circle cx="220" cy="75" r="58" fill="none" stroke="rgba(0,230,118,0.1)" stroke-width="1" stroke-dasharray="3 5" style="animation: ringBreath 4s infinite;"/>
                                 <text x="220" y="62" text-anchor="middle" fill="#66bb6a" font-size="14" font-weight="800" letter-spacing="2" font-family="Inter,sans-serif">SPLASH</text>
                                                                 <text x="220" y="97" text-anchor="middle" fill="#66bb6a" font-size="20" font-weight="900" font-family="Inter,sans-serif" style="animation: scorePulse 3s infinite 0.5s;">78</text>
 
                                 <!-- === RIDE node (bottom-left) === -->
-                                <circle cx="105" cy="310" r="50" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.4)" stroke-width="2" style="animation: ringPulse 5s infinite 0.5s;"/>
+                                <circle cx="105" cy="310" r="50" fill="none" stroke="rgba(59,130,246,0.4)" stroke-width="2" style="animation: ringPulse 5s infinite 0.5s;"/>
                                 <circle cx="105" cy="310" r="58" fill="none" stroke="rgba(59,130,246,0.12)" stroke-width="1" stroke-dasharray="3 5" style="animation: ringBreath 4s infinite 0.5s;"/>
                                 <text x="105" y="298" text-anchor="middle" fill="#60a5fa" font-size="15" font-weight="800" letter-spacing="3" font-family="Inter,sans-serif">RIDE</text>
                                                                 <text x="105" y="333" text-anchor="middle" fill="#60a5fa" font-size="20" font-weight="900" font-family="Inter,sans-serif" style="animation: scorePulse 3s infinite;">81</text>
 
                                 <!-- === PLAY node (bottom-right) === -->
-                                <circle cx="335" cy="310" r="50" fill="rgba(171,71,188,0.05)" stroke="rgba(171,71,188,0.35)" stroke-width="2" style="animation: ringPulse 5s infinite 1.5s;"/>
+                                <circle cx="335" cy="310" r="50" fill="none" stroke="rgba(171,71,188,0.35)" stroke-width="2" style="animation: ringPulse 5s infinite 1.5s;"/>
                                 <circle cx="335" cy="310" r="58" fill="none" stroke="rgba(171,71,188,0.1)" stroke-width="1" stroke-dasharray="3 5" style="animation: ringBreath 4s infinite 1s;"/>
                                 <text x="335" y="298" text-anchor="middle" fill="#ab47bc" font-size="15" font-weight="800" letter-spacing="3" font-family="Inter,sans-serif">PLAY</text>
                                                                 <text x="335" y="333" text-anchor="middle" fill="#ab47bc" font-size="20" font-weight="900" font-family="Inter,sans-serif" style="animation: scorePulse 3s infinite 1s;">83</text>
 
                                 <!-- === AS 360 center node === -->
-                                <circle cx="220" cy="200" r="44" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.5)" stroke-width="2.5" style="animation: centerGlow 4s infinite;"/>
+                                <circle cx="220" cy="200" r="44" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="2.5" style="animation: centerGlow 4s infinite;"/>
                                 <circle cx="220" cy="200" r="52" fill="none" stroke="rgba(59,130,246,0.18)" stroke-width="1" stroke-dasharray="4 4" style="animation: ringBreath 3s infinite;"/>
                                 <text x="220" y="194" text-anchor="middle" fill="#93c5fd" font-size="14" font-weight="700" letter-spacing="2" font-family="Inter,sans-serif">AS 360</text>
                                 <text x="220" y="210" text-anchor="middle" fill="rgba(147,197,253,0.55)" font-size="8" font-weight="600" letter-spacing="1" font-family="Inter,sans-serif">PLATFORM</text>
@@ -574,21 +574,25 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" style="cursor:pointer;" onclick="window.location.href='restaurant-dashboard-case-study.html'">
                     <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">📊</span></div></div>
-                    <div class="project-content"><h4>Restaurant Performance Dashboard</h4><p>Designed interactive Power BI dashboard tracking daily sales, labor costs, and food waste metrics. Enabled data-driven staffing and menu decisions, reducing waste by 15%.</p></div>
+                    <div class="project-content"><h4>Restaurant Performance Dashboard</h4><p>Full case study: built an interactive Power BI dashboard tracking daily sales, labor costs, and true margin per menu item. Reduced waste by 15% and cut Monday/Tuesday labor costs by 22%. Now productized as the TableStandards 90-Day Pilot.</p><a href="restaurant-dashboard-case-study.html" class="project-link" style="margin-top:0.75rem;">View Case Study →</a></div>
                 </div>
-                <div class="project-card">
-                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">🔍</span></div></div>
-                    <div class="project-content"><h4>Supply Chain Analysis</h4><p>Analyzed vendor delivery performance and pricing data using SQL queries and Excel pivot tables. Identified cost-saving opportunities reducing procurement expenses by 12% annually.</p></div>
+                <div class="project-card" style="cursor:pointer;" onclick="window.location.href='food-waste-tracker-case-study.html'">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">🗑️</span></div></div>
+                    <div class="project-content"><h4>Food Waste Tracker</h4><p>Full case study: built a zero-install, QR-code-activated mobile web app for kitchen staff to log food waste in 15 seconds. Categorizes by station and waste type. Identified a 40% overproduction pattern in pasta prep within the first month.</p><a href="food-waste-tracker-case-study.html" class="project-link" style="margin-top:0.75rem;">View Case Study →</a></div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" style="cursor:pointer;" onclick="window.location.href='scheduling-optimization-case-study.html'">
                     <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">📅</span></div></div>
-                    <div class="project-content"><h4>Employee Scheduling Optimization</h4><p>Built Excel-based scheduling model using historical sales data and labor requirements. Optimized staff allocation to match demand patterns, improving labor efficiency by 18%.</p></div>
+                    <div class="project-content"><h4>Employee Scheduling Optimization</h4><p>Full case study: built ARIMA-based demand forecasting models in R Studio to generate optimized staffing grids. Cut 30+ overstaffed hours per week and reduced overtime by 60%. Now deployed as the TableStandards labor optimization service.</p><a href="scheduling-optimization-case-study.html" class="project-link" style="margin-top:0.75rem;">View Case Study →</a></div>
                 </div>
                 <div class="project-card" style="cursor:pointer;" onclick="window.location.href='pizza-sales-case-study.html'">
                     <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">🍕</span></div></div>
                     <div class="project-content"><h4>Inventory Forecasting Model</h4><p>Full case study: analyzed 48,620 pizza transactions across 12 months to build a size-weighted box inventory forecasting model. Identified demand patterns by hour, day, and size to reduce waste and stockouts.</p><a href="pizza-sales-case-study.html" class="project-link" style="margin-top:0.75rem;">View Case Study →</a></div>
+                </div>
+                <div class="project-card" style="cursor:pointer;" onclick="window.location.href='roi-calculator-case-study.html'">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">💰</span></div></div>
+                    <div class="project-content"><h4>Operational ROI Calculator</h4><p>Full case study: built an interactive web tool that quantifies annual operational variance across food cost, labor, and incident exposure. Real-time slider calculations show multi-location operators exactly where they're leaving money.</p><a href="roi-calculator-case-study.html" class="project-link" style="margin-top:0.75rem;">View Case Study →</a></div>
                 </div>
             </div>
         </section>
