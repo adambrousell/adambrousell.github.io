@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>adambrousell</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="adambrousell" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://adamb.info/" />
+<meta property="og:url" content="https://adamb.info/" />
+<meta property="og:site_name" content="adambrousell" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="adambrousell" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"adambrousell","name":"adambrousell","url":"https://adamb.info/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=1dce484c314800e017298530e475b18e77ddd5a7">
+    <style>
+      /* Override Jekyll theme wrapper */
+      .container-lg.px-3.my-5.markdown-body {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        background: #000 !important;
+      }
+      .container-lg.px-3.my-5.markdown-body > h1:first-child {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://adamb.info/">adambrousell</a></h1>
+      
+
+      <html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Brousell - Data Analytics Professional</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6; color: #e0e0e0; background: #000000; overflow-x: hidden;
+        }
+        
+        .mesh-gradient {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: 
+                radial-gradient(at 20% 30%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(96, 165, 250, 0.12) 0px, transparent 50%),
+                radial-gradient(at 0% 50%, rgba(37, 99, 235, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 80%, rgba(71, 85, 105, 0.12) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(30, 58, 138, 0.15) 0px, transparent 50%);
+            z-index: 0; animation: meshMove 20s ease infinite;
+        }
+        @keyframes meshMove { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+        
+        .grid-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: 
+                linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px; z-index: 1; pointer-events: none;
+        }
+        
+        .data-particles { position: fixed; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+        .particle {
+            position: absolute; width: 4px; height: 4px;
+            background: linear-gradient(45deg, #3b82f6, #60a5fa);
+            border-radius: 50%; opacity: 0.4; animation: particleFloat 15s infinite ease-in-out;
+        }
+        .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 80%; top: 40%; animation-delay: 2s; }
+        .particle:nth-child(3) { left: 30%; top: 60%; animation-delay: 4s; }
+        .particle:nth-child(4) { left: 70%; top: 80%; animation-delay: 6s; }
+        .particle:nth-child(5) { left: 50%; top: 30%; animation-delay: 8s; }
+        .particle:nth-child(6) { left: 15%; top: 75%; animation-delay: 3s; }
+        .particle:nth-child(7) { left: 85%; top: 15%; animation-delay: 5s; }
+        .particle:nth-child(8) { left: 25%; top: 45%; animation-delay: 7s; }
+        .particle:nth-child(9) { left: 65%; top: 25%; animation-delay: 1s; }
+        .particle:nth-child(10) { left: 40%; top: 85%; animation-delay: 9s; }
+        @keyframes particleFloat {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.5); }
+            66% { transform: translate(-30px, 30px) scale(0.8); }
+        }
+        
+        .graph-line { position: absolute; opacity: 0.08; animation: graphFloat 40s infinite ease-in-out; }
+        .graph-line svg { width: 500px; height: 200px; }
+        .graph-line:nth-child(11) { left: -10%; top: 15%; animation-duration: 45s; }
+        .graph-line:nth-child(12) { right: -10%; top: 35%; animation-delay: 8s; animation-duration: 50s; }
+        .graph-line:nth-child(13) { left: -15%; bottom: 25%; animation-delay: 16s; animation-duration: 42s; }
+        @keyframes graphFloat {
+            0% { transform: translate(0, 0) rotate(-5deg); opacity: 0; }
+            10% { opacity: 0.12; }
+            50% { transform: translate(120px, 100px) rotate(5deg); opacity: 0.15; }
+            90% { opacity: 0.12; }
+            100% { transform: translate(240px, 200px) rotate(-3deg); opacity: 0; }
+        }
+        .graph-path { fill: none; stroke: #3b82f6; stroke-width: 2; stroke-linecap: round; stroke-dasharray: 5 5; animation: dashMove 3s linear infinite; }
+        @keyframes dashMove { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 20; } }
+        
+        .geo-shape { position: absolute; opacity: 0.06; animation: shapeFloat 35s infinite ease-in-out; }
+        .geo-hexagon { width: 80px; height: 140px; background: rgba(59, 130, 246, 0.15); clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+        .bell-curve { width: 200px; height: 120px; }
+        .bell-path { fill: none; stroke: #3b82f6; stroke-width: 2; opacity: 0.4; }
+        .bar-chart-shape { display: flex; align-items: flex-end; gap: 8px; height: 100px; width: 150px; }
+        .bar-item { flex: 1; background: linear-gradient(to top, rgba(59, 130, 246, 0.3), rgba(96, 165, 250, 0.2)); border-radius: 3px 3px 0 0; }
+        .shape-1 { left: 8%; top: 12%; animation-duration: 38s; }
+        .shape-2 { right: 12%; top: 22%; animation-delay: 5s; animation-duration: 42s; }
+        .shape-3 { left: 18%; bottom: 18%; animation-delay: 10s; animation-duration: 36s; }
+        .shape-4 { right: 35%; bottom: 12%; animation-delay: 25s; animation-duration: 39s; }
+        @keyframes shapeFloat {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.06; }
+            25% { transform: translate(30px, -40px) rotate(15deg); opacity: 0.10; }
+            50% { transform: translate(60px, -20px) rotate(-10deg); opacity: 0.08; }
+            75% { transform: translate(30px, 20px) rotate(8deg); opacity: 0.10; }
+        }
+        
+        .content { position: relative; z-index: 10; }
+        
+        header { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+        .hero-content { text-align: center; padding: 1rem; max-width: 1200px; z-index: 2; }
+        .hero-badge {
+            display: inline-block; padding: 0.25rem 0.75rem;
+            background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 50px; color: #93c5fd; font-size: 0.875rem;
+            font-weight: 600; letter-spacing: 0.5px; margin-bottom: 2rem; backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem); font-weight: 900; margin-bottom: .5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #60a5fa 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            line-height: 1.1; letter-spacing: -2px;
+        }
+        .hero-subtitle { font-size: clamp(1.25rem, 3vw, 1.75rem); color: #9ca3af; margin-bottom: 1rem; font-weight: 400; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .cta-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: .5rem 1.25rem; border-radius: 12px; font-weight: 600; text-decoration: none; transition: all 0.3s; font-size: 1.1rem; display: inline-block; }
+        .btn-primary { background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); color: white; box-shadow: 0 10px 40px rgba(59, 130, 246, 0.3); }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 50px rgba(59, 130, 246, 0.4); }
+        .btn-secondary { background: rgba(255, 255, 255, 0.05); color: white; border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.2); }
+        
+        nav {
+            position: fixed; top: 2rem; left: 50%; transform: translateX(-50%);
+            background: rgba(17, 24, 39, 0.8); backdrop-filter: blur(20px);
+            padding: .5rem 1rem; border-radius: 50px; border: 1px solid rgba(255, 255, 255, 0.1);
+            z-index: 1000; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { color: #9ca3af; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: #fff; }
+        
+        section { padding: 1rem .5rem; max-width: 1400px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 1rem; }
+        .section-tag { display: inline-block; padding: 0.5rem 1.5rem; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 50px; color: #93c5fd; font-size: 0.875rem; font-weight: 600; margin-bottom: 1rem; }
+        h2 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; margin-bottom: 1rem; background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .section-description { font-size: 1.25rem; color: #9ca3af; max-width: 700px; margin: 0 auto; }
+        
+        .bento-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1rem; }
+        .bento-card { background: rgba(17, 24, 39, 0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; padding: 1rem; transition: all 0.3s; position: relative; overflow: hidden; }
+        .bento-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%); opacity: 0; transition: opacity 0.3s; }
+        .bento-card:hover { transform: translateY(-8px); border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2); }
+        .bento-card:hover::before { opacity: 1; }
+        .card-icon { font-size: 3rem; margin-bottom: 1.5rem; display: block; }
+        .bento-card h3 { font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem; position: relative; z-index: 1; }
+        .bento-card p, .bento-card ul { color: #9ca3af; line-height: 1.8; position: relative; z-index: 1; }
+        .bento-card ul { list-style: none; }
+        .bento-card li { padding: 0.5rem 0; padding-left: 1.5rem; position: relative; }
+        .bento-card li::before { content: '\2192'; position: absolute; left: 0; color: #3b82f6; font-weight: bold; }
+        
+        .feature-large { grid-column: span 2; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%); display: flex; align-items: center; gap: 3rem; padding: 3rem; }
+        .feature-image { flex: 1; min-width: 300px; height: 300px; background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 50%, #0a1628 100%); border-radius: 20px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .feature-content { flex: 1; }
+        
+        .abstract-dashboard { width: 100%; height: 100%; position: relative; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+        .abstract-dashboard::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 40%, rgba(59,130,246,0.12) 0%, transparent 50%), radial-gradient(circle at 70% 70%, rgba(96,165,250,0.08) 0%, transparent 40%); }
+        .dash-row { display: flex; gap: 0.5rem; flex: 1; position: relative; z-index: 1; }
+        .dash-block { flex: 1; border-radius: 8px; border: 1px solid rgba(59,130,246,0.15); background: rgba(59,130,246,0.05); position: relative; overflow: hidden; }
+        .dash-block-accent { border-color: rgba(59,130,246,0.25); background: rgba(59,130,246,0.08); }
+        .dash-block-wide { flex: 2; }
+        .dash-bar { position: absolute; bottom: 8px; left: 8px; right: 8px; display: flex; gap: 3px; align-items: flex-end; height: 40%; }
+        .dash-bar-item { flex: 1; border-radius: 2px 2px 0 0; background: rgba(59,130,246,0.3); }
+        .dash-line { position: absolute; top: 50%; left: 10%; right: 10%; height: 1px; background: rgba(96,165,250,0.2); }
+        .dash-dot { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: #60a5fa; opacity: 0.5; }
+        
+        .timeline { position: relative; padding-left: 3rem; }
+        .timeline::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 2px; background: linear-gradient(to bottom, #3b82f6, #1e40af); }
+        .timeline-item { position: relative; margin-bottom: 3rem; padding-left: 2rem; }
+        .timeline-item::before { content: ''; position: absolute; left: -3.5rem; top: 0; width: 12px; height: 12px; background: #3b82f6; border-radius: 50%; box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2); }
+        .timeline-date { color: #60a5fa; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .timeline-title { font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+        .timeline-company { color: #93c5fd; font-weight: 600; margin-bottom: 1rem; }
+        .timeline-description { color: #9ca3af; line-height: 1.8; }
+        
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .project-card { background: rgba(17, 24, 39, 0.5); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 24px; overflow: hidden; transition: all 0.3s; }
+        .project-card:hover { transform: translateY(-8px); border-color: rgba(59, 130, 246, 0.3); box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2); }
+        .project-image { width: 100%; height: 200px; background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .project-content { padding: 2rem; }
+        .project-content h4 { font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 1rem; }
+        .project-content p { color: #9ca3af; line-height: 1.8; }
+        
+        .proj-visual { width: 100%; height: 100%; position: relative; display: flex; align-items: center; justify-content: center; }
+        .proj-visual::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px); background-size: 24px 24px; }
+        .proj-icon { font-size: 3rem; position: relative; z-index: 1; filter: saturate(0.8); }
+        .proj-glow { position: absolute; width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle, rgba(59,130,246,0.2) 0%, transparent 70%); }
+        
+        .project-featured { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; background: rgba(17, 24, 39, 0.5); backdrop-filter: blur(10px); border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 24px; overflow: hidden; transition: all 0.3s; position: relative; }
+        .project-featured::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(30, 64, 175, 0.08) 100%); pointer-events: none; }
+        .project-featured:hover { transform: translateY(-8px); border-color: rgba(59, 130, 246, 0.4); box-shadow: 0 20px 60px rgba(59, 130, 246, 0.2); }
+        .project-featured .project-image { height: 100%; min-height: 380px; }
+        .project-featured .project-content { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 1; }
+        .project-featured .project-content h4 { font-size: 1.75rem; }
+        .project-label { display: inline-block; padding: 0.2rem 0.7rem; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 50px; color: #93c5fd; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; margin-bottom: 0.75rem; width: fit-content; }
+        .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+        .project-tag { padding: 0.2rem 0.6rem; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; color: #9ca3af; font-size: 0.75rem; font-weight: 500; }
+        .project-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 1.25rem; color: #60a5fa; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+        .project-link:hover { color: #93c5fd; }
+        
+        /* Node Visual */
+        .node-visual { width: 100%; height: 100%; position: relative; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #060e1a 0%, #0d1b2a 50%, #081422 100%); overflow: hidden; }
+        .node-visual::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(59,130,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(59,130,246,0.03) 1px, transparent 1px); background-size: 28px 28px; }
+        .node-visual::after { content: ''; position: absolute; width: 300%; height: 300%; top: -100%; left: -100%; background: radial-gradient(circle at 40% 45%, rgba(59,130,246,0.1) 0%, transparent 35%), radial-gradient(circle at 60% 55%, rgba(0,230,118,0.06) 0%, transparent 30%), radial-gradient(circle at 50% 40%, rgba(171,71,188,0.05) 0%, transparent 25%); }
+        .node-svg { position: relative; z-index: 2; }
+        @keyframes nodePulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 0.8; } }
+        @keyframes nodeGlow { 0%, 100% { filter: drop-shadow(0 0 4px rgba(59,130,246,0.3)); } 50% { filter: drop-shadow(0 0 10px rgba(59,130,246,0.6)); } }
+        
+        footer { padding: 2rem 1rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 6rem; }
+        footer p { color: #6b7280; }
+        
+        @media (max-width: 768px) {
+            nav { padding: 0.75rem 1.5rem; } nav ul { gap: 1rem; }
+            .feature-large { grid-column: span 1; flex-direction: column; }
+            .project-featured { grid-column: span 1; grid-template-columns: 1fr; }
+            .project-featured .project-image { min-height: 260px; }
+            .timeline { padding-left: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="mesh-gradient"></div>
+    <div class="grid-overlay"></div>
+    <div class="data-particles">
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div>
+        <div class="graph-line"><svg viewBox="0 0 500 200"><path class="graph-path" d="M 10,120 Q 80,40 150,90 T 300,70 T 450,100" /></svg></div>
+        <div class="graph-line"><svg viewBox="0 0 500 200"><path class="graph-path" d="M 10,100 Q 100,150 180,110 T 350,80 T 490,130" /></svg></div>
+        <div class="graph-line"><svg viewBox="0 0 500 200"><path class="graph-path" d="M 10,60 Q 120,110 200,80 T 360,100 T 490,50" /></svg></div>
+        <div class="geo-shape bell-curve shape-1"><svg viewBox="0 0 200 120"><path class="bell-path" d="M 10,110 Q 50,110 70,80 Q 100,20 130,80 Q 150,110 190,110" /></svg></div>
+        <div class="geo-shape bar-chart-shape shape-2"><div class="bar-item" style="height: 50%;"></div><div class="bar-item" style="height: 75%;"></div><div class="bar-item" style="height: 90%;"></div><div class="bar-item" style="height: 65%;"></div><div class="bar-item" style="height: 80%;"></div></div>
+        <div class="geo-shape geo-hexagon shape-3"></div>
+        <div class="geo-shape bar-chart-shape shape-4"><div class="bar-item" style="height: 60%;"></div><div class="bar-item" style="height: 85%;"></div><div class="bar-item" style="height: 70%;"></div><div class="bar-item" style="height: 95%;"></div><div class="bar-item" style="height: 55%;"></div></div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <header>
+            <div class="hero-content">
+                <div class="hero-badge">DATA DRIVEN PROFESSIONAL</div>
+                <h1>Adam Brousell</h1>
+                <p class="hero-subtitle">Transforming 15+ years of operations expertise into data-driven insights. Specialized in supply chain analytics, business intelligence, and operational optimization.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+        </header>
+        
+        <section id="about">
+            <div class="section-header">
+                <div class="section-tag">WHO I AM</div>
+                <h2>Bridging Operations &amp; Analytics</h2>
+                <p class="section-description">I combine deep operational expertise with modern analytics tools to turn complex data into actionable business insights.</p>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card feature-large">
+                    <div class="feature-image">
+                        <div class="abstract-dashboard">
+                            <div class="dash-row">
+                                <div class="dash-block dash-block-accent"><div class="dash-bar"><div class="dash-bar-item" style="height:60%;"></div><div class="dash-bar-item" style="height:85%;"></div><div class="dash-bar-item" style="height:70%;"></div><div class="dash-bar-item" style="height:95%;"></div><div class="dash-bar-item" style="height:55%;"></div><div class="dash-bar-item" style="height:75%;"></div></div></div>
+                                <div class="dash-block"><div class="dash-line"></div><div class="dash-dot" style="left:20%;top:35%;"></div><div class="dash-dot" style="left:40%;top:55%;"></div><div class="dash-dot" style="left:60%;top:30%;"></div><div class="dash-dot" style="left:80%;top:50%;"></div></div>
+                            </div>
+                            <div class="dash-row">
+                                <div class="dash-block dash-block-wide"><div class="dash-line" style="top:40%;"></div><div class="dash-line" style="top:60%;opacity:0.5;"></div></div>
+                                <div class="dash-block"><div class="dash-bar"><div class="dash-bar-item" style="height:45%;"></div><div class="dash-bar-item" style="height:70%;"></div><div class="dash-bar-item" style="height:90%;"></div></div></div>
+                            </div>
+                            <div class="dash-row" style="flex:0.5;"><div class="dash-block"></div><div class="dash-block"></div><div class="dash-block"></div><div class="dash-block"></div></div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <h3>From Operations to Analytics</h3>
+                        <p>With a Bachelor of Science in Supply Chain Management from Lehigh University and Google Data Analytics certification, I've spent 15+ years managing high-volume restaurant operations while developing expertise in data analysis, forecasting, and business intelligence.</p>
+                        <p style="margin-top: 1rem;">My unique background combines P&amp;L ownership, inventory optimization, and people analytics with technical proficiency in Excel, SQL, and Power BI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <div class="section-header">
+                <div class="section-tag">EXPERTISE</div>
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card"><span class="card-icon">📊</span><h3>Data Analysis</h3><ul><li>Microsoft Excel (Advanced)</li><li>SQL Querying</li><li>Power BI Dashboards</li><li>Data Visualization</li><li>Statistical Analysis</li></ul></div>
+                <div class="bento-card"><span class="card-icon">⚙️</span><h3>Operations</h3><ul><li>Supply Chain Management</li><li>Process Optimization</li><li>Inventory Control</li><li>Vendor Management</li><li>Cost Reduction</li></ul></div>
+                <div class="bento-card"><span class="card-icon">📈</span><h3>Business Analytics</h3><ul><li>KPI Development</li><li>Performance Metrics</li><li>Forecasting Models</li><li>People Analytics</li><li>Business Intelligence</li></ul></div>
+                <div class="bento-card"><span class="card-icon">👥</span><h3>Leadership</h3><ul><li>Team Management</li><li>P&amp;L Ownership</li><li>Strategic Planning</li><li>Stakeholder Communication</li><li>Cross-functional Collaboration</li></ul></div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <div class="section-header"><div class="section-tag">EDUCATION</div><h2>Academic Background</h2></div>
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
+                    <div class="timeline-date">DEC 2007</div>
+                    <div class="timeline-title">Bachelor of Science in Supply Chain Management</div>
+                    <div class="timeline-company">Lehigh University | Bethlehem, PA</div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="certifications">
+            <div class="section-header"><div class="section-tag">CERTIFICATIONS</div><h2>Professional Development</h2></div>
+            <div class="timeline">
+                <div class="timeline-item" style="border-bottom: none; padding-bottom: 0;">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-title">Google Data Analytics Professional Certificate</div>
+                    <div class="timeline-company">Google (via Coursera)</div>
+                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="867dd01a-fe76-44a3-987f-cdf32db42c69" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <div class="section-header"><div class="section-tag">CAREER PATH</div><h2>Professional Journey</h2></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - PRESENT</div>
+                    <div class="timeline-title">Founder &amp; Director of Data Analytics &amp; Risk Intelligence</div>
+                    <div class="timeline-company">Amusement Standards | Ocean Township, NJ</div>
+                    <p class="timeline-description"><strong>Core Focus:</strong> Building risk intelligence infrastructure for the $35B U.S. attractions industry</p>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Designed and built the AS 360 Platform — three scoring indices (RIDE Score™, SPLASH Score™, PLAY Score™) plus the Park Intelligence Composite</li>
+                        <li style="padding: 0.3rem 0;">→ Architected 384+ DAX measures across 27 sections in Power BI, integrating 37 independent data streams</li>
+                        <li style="padding: 0.3rem 0;">→ Developed dual-API queue data integration, weather overlays, and real-time operational load monitoring</li>
+                        <li style="padding: 0.3rem 0;">→ Targeting specialty insurance carriers, ride manufacturers, and operators with FICO-style risk scoring</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">DEC 2010 - DEC 2025</div>
+                    <div class="timeline-title">General Manager / Restaurant Operations Manager</div>
+                    <div class="timeline-company">Multiple Full-Service Restaurants | Monmouth County, NJ</div>
+                    <p class="timeline-description" style="font-style: italic; margin-bottom: 1rem;">Tre Pizza • Taka Japanese Bar • Stella Marina • Fresh • Dolce Fantasia • Nanna's Kitchen</p>
+                    <p class="timeline-description"><strong>Core Focus:</strong> KPI ownership, budgeting &amp; P&amp;L exposure, labor forecasting, process improvement, vendor &amp; inventory management</p>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Led end-to-end operations and inventory management for high-volume environments</li>
+                        <li style="padding: 0.3rem 0;">→ Managed 50-60+ employees, aligning workforce with demand patterns</li>
+                        <li style="padding: 0.3rem 0;">→ Analyzed sales trends and seasonal patterns for forecasting and optimization</li>
+                        <li style="padding: 0.3rem 0;">→ Reduced waste and stockouts through improved inventory controls</li>
+                        <li style="padding: 0.3rem 0;">→ Executed weekly payroll and labor cost tracking for budget management</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">FEB 2008 - JAN 2010</div>
+                    <div class="timeline-title">Staff Accountant</div>
+                    <div class="timeline-company">KML &amp; Associates, LLC | Little Silver, NJ</div>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Prepared personal and business tax returns for federal and state agencies</li>
+                        <li style="padding: 0.3rem 0;">→ Assisted with audit engagements for large multi-national commercial banks</li>
+                        <li style="padding: 0.3rem 0;">→ Conducted independent physical inventory audits to verify record integrity</li>
+                        <li style="padding: 0.3rem 0;">→ Field examiner for commercial loan examination services</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">MAR 2004 - SEP 2007</div>
+                    <div class="timeline-title">Ride Operations Supervisor</div>
+                    <div class="timeline-company">Six Flags Great Adventure Resort | Jackson, NJ</div>
+                    <ul style="margin-top: 1rem; list-style: none; color: #9ca3af;">
+                        <li style="padding: 0.3rem 0;">→ Directed, motivated, trained, scheduled, and audited a professional staff of 50+ in a fast-paced service environment</li>
+                        <li style="padding: 0.3rem 0;">→ Enhanced customer experience by creating an environment emphasizing safety and motivating employees through strategic position rotation and workload balancing</li>
+                        <li style="padding: 0.3rem 0;">→ Ensured smooth operations while enforcing safety regulations through continuous communication with supervisors and routine safety procedures</li>
+                        <li style="padding: 0.3rem 0;">→ Performed critical first responder role during emergency situations, coordinating employee evacuations and conferring with maintenance personnel</li>
+                        <li style="padding: 0.3rem 0;">→ Auditing Supervisor: Led newly created task force to target deficiencies in training of front-line workers in Rides Department (2007)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <div class="section-header"><div class="section-tag">PORTFOLIO</div><h2>Featured Projects</h2></div>
+            <div class="projects-grid">
+                <!-- AS 360 Featured -->
+                <div class="project-featured">
+                    <div class="project-image">
+                        <div class="node-visual">
+                            <svg class="node-svg" viewBox="0 0 420 380" width="420" height="380" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Connection lines from AS360 to scores -->
+                                <line x1="210" y1="80" x2="100" y2="220" stroke="rgba(59,130,246,0.25)" stroke-width="1.5" stroke-dasharray="4 4" style="animation: nodePulse 3s infinite;" />
+                                <line x1="210" y1="80" x2="320" y2="220" stroke="rgba(59,130,246,0.25)" stroke-width="1.5" stroke-dasharray="4 4" style="animation: nodePulse 3s infinite 0.5s;" />
+                                <line x1="210" y1="80" x2="210" y2="250" stroke="rgba(59,130,246,0.25)" stroke-width="1.5" stroke-dasharray="4 4" style="animation: nodePulse 3s infinite 1s;" />
+                                <!-- Lines from scores to PIC -->
+                                <line x1="100" y1="250" x2="210" y2="340" stroke="rgba(96,165,250,0.2)" stroke-width="1" stroke-dasharray="3 3" style="animation: nodePulse 4s infinite;" />
+                                <line x1="210" y1="280" x2="210" y2="340" stroke="rgba(96,165,250,0.2)" stroke-width="1" stroke-dasharray="3 3" style="animation: nodePulse 4s infinite 0.7s;" />
+                                <line x1="320" y1="250" x2="210" y2="340" stroke="rgba(96,165,250,0.2)" stroke-width="1" stroke-dasharray="3 3" style="animation: nodePulse 4s infinite 1.4s;" />
+                                
+                                <!-- AS 360 hub -->
+                                <circle cx="210" cy="68" r="36" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5" style="animation: nodeGlow 4s infinite;" />
+                                <text x="210" y="62" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="700" letter-spacing="1.5" font-family="Inter, sans-serif">AS 360</text>
+                                <text x="210" y="78" text-anchor="middle" fill="rgba(147,197,253,0.5)" font-size="7" font-weight="600" letter-spacing="1" font-family="Inter, sans-serif">PLATFORM</text>
+                                
+                                <!-- RIDE -->
+                                <circle cx="100" cy="230" r="42" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.35)" stroke-width="1.5" />
+                                <text x="100" y="220" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="800" letter-spacing="2" font-family="Inter, sans-serif">RIDE</text>
+                                <text x="100" y="236" text-anchor="middle" fill="rgba(147,197,253,0.5)" font-size="7" font-weight="500" font-family="Inter, sans-serif">Dry Attractions</text>
+                                <text x="100" y="252" text-anchor="middle" fill="#60a5fa" font-size="16" font-weight="900" font-family="Inter, sans-serif">81</text>
+                                
+                                <!-- SPLASH -->
+                                <circle cx="210" cy="260" r="42" fill="rgba(0,230,118,0.06)" stroke="rgba(0,230,118,0.3)" stroke-width="1.5" />
+                                <text x="210" y="248" text-anchor="middle" fill="#66bb6a" font-size="12" font-weight="800" letter-spacing="1.5" font-family="Inter, sans-serif">SPLASH</text>
+                                <text x="210" y="264" text-anchor="middle" fill="rgba(102,187,106,0.5)" font-size="7" font-weight="500" font-family="Inter, sans-serif">Aquatic &amp; Water</text>
+                                <text x="210" y="280" text-anchor="middle" fill="#66bb6a" font-size="16" font-weight="900" font-family="Inter, sans-serif">78</text>
+                                
+                                <!-- PLAY -->
+                                <circle cx="320" cy="230" r="42" fill="rgba(171,71,188,0.06)" stroke="rgba(171,71,188,0.3)" stroke-width="1.5" />
+                                <text x="320" y="220" text-anchor="middle" fill="#ab47bc" font-size="13" font-weight="800" letter-spacing="2" font-family="Inter, sans-serif">PLAY</text>
+                                <text x="320" y="236" text-anchor="middle" fill="rgba(171,71,188,0.5)" font-size="7" font-weight="500" font-family="Inter, sans-serif">FECs &amp; Entertainment</text>
+                                <text x="320" y="252" text-anchor="middle" fill="#ab47bc" font-size="16" font-weight="900" font-family="Inter, sans-serif">83</text>
+                                
+                                <!-- PIC -->
+                                <circle cx="210" cy="348" r="24" fill="rgba(255,214,0,0.06)" stroke="rgba(255,214,0,0.3)" stroke-width="1" />
+                                <text x="210" y="345" text-anchor="middle" fill="#ffd600" font-size="8" font-weight="700" letter-spacing="1.5" font-family="Inter, sans-serif">PIC</text>
+                                <text x="210" y="357" text-anchor="middle" fill="rgba(255,214,0,0.5)" font-size="6" font-weight="500" font-family="Inter, sans-serif">Composite</text>
+                                
+                                <!-- Stream dots -->
+                                <circle cx="55" cy="195" r="2.5" fill="#3b82f6" opacity="0.4" style="animation: nodePulse 2.5s infinite 0.2s;" />
+                                <circle cx="60" cy="265" r="2" fill="#3b82f6" opacity="0.3" style="animation: nodePulse 2.5s infinite 0.8s;" />
+                                <circle cx="140" cy="190" r="2" fill="#3b82f6" opacity="0.35" style="animation: nodePulse 2.5s infinite 1.2s;" />
+                                <circle cx="170" cy="290" r="2.5" fill="#66bb6a" opacity="0.35" style="animation: nodePulse 2.5s infinite 0.3s;" />
+                                <circle cx="250" cy="290" r="2" fill="#66bb6a" opacity="0.3" style="animation: nodePulse 2.5s infinite 1s;" />
+                                <circle cx="360" cy="210" r="2.5" fill="#ab47bc" opacity="0.35" style="animation: nodePulse 2.5s infinite 0.7s;" />
+                                <circle cx="355" cy="260" r="2" fill="#ab47bc" opacity="0.3" style="animation: nodePulse 2.5s infinite 1.3s;" />
+                                
+                                <text x="210" y="22" text-anchor="middle" fill="rgba(147,197,253,0.3)" font-size="7" font-weight="600" letter-spacing="3" font-family="Inter, sans-serif">AMUSEMENT STANDARDS</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-label">FLAGSHIP · FOUNDER</div>
+                        <h4>AS 360 Platform — RIDE · SPLASH · PLAY</h4>
+                        <p>The industry's first complete operational risk system for the $35B U.S. attractions industry. Three continuous scoring indices — RIDE Score™ for dry attractions, SPLASH Score™ for aquatic environments, and PLAY Score™ for FECs — each independently deployable, each exponentially more powerful when combined into the Park Intelligence Composite.</p>
+                        <p style="margin-top: 0.75rem;">Built on Power BI and Airtable with 384+ DAX measures and 37 independent data streams including field audits, incident intelligence, queue APIs, weather overlays, and lifeguard zone monitoring. Targeting specialty insurance carriers, ride manufacturers, and park operators.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">Airtable</span>
+                            <span class="project-tag">REST APIs</span>
+                            <span class="project-tag">Risk Analytics</span>
+                            <span class="project-tag">InsurTech</span>
+                        </div>
+                        <a href="https://amusementstandards.com/as360-platform.html" class="project-link" target="_blank">AS 360 Platform — RIDE · SPLASH · PLAY →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">📊</span></div></div>
+                    <div class="project-content"><h4>Restaurant Performance Dashboard</h4><p>Designed interactive Power BI dashboard tracking daily sales, labor costs, and food waste metrics. Enabled data-driven staffing and menu decisions, reducing waste by 15%.</p></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">🔍</span></div></div>
+                    <div class="project-content"><h4>Supply Chain Analysis</h4><p>Analyzed vendor delivery performance and pricing data using SQL queries and Excel pivot tables. Identified cost-saving opportunities reducing procurement expenses by 12% annually.</p></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">📅</span></div></div>
+                    <div class="project-content"><h4>Employee Scheduling Optimization</h4><p>Built Excel-based scheduling model using historical sales data and labor requirements. Optimized staff allocation to match demand patterns, improving labor efficiency by 18%.</p></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"><div class="proj-visual"><div class="proj-glow"></div><span class="proj-icon">📈</span></div></div>
+                    <div class="project-content"><h4>Inventory Forecasting Model</h4><p>Created predictive model for inventory ordering based on seasonal trends and historical consumption data. Reduced stockouts by 25% while minimizing excess inventory.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="section-header">
+                <div class="section-tag">LET'S CONNECT</div>
+                <h2>Get In Touch</h2>
+                <p class="section-description">Ready to bring analytical rigor and operational expertise to your team. Let's discuss how I can drive data-informed decisions and measurable results.</p>
+            </div>
+            <div class="cta-buttons" style="margin-top: 3rem;">
+                <a href="mailto:adam.brousell@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://linkedin.com/in/adam-brousell" class="btn btn-secondary" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+        
+        <footer><p>&copy; 2026 Adam Brousell. All rights reserved.</p></footer>
+    </div>
+</body>
+</html>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
