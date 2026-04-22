@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&J Scrap & Junk Removal | Free Scrap Metal Pickup | Monmouth & Ocean County NJ</title>
+<meta name="description" content="Free scrap metal and appliance pickup in Monmouth & Ocean County, NJ. Junk removal, estate cleanouts, contractor scrap hauling. Call today for same-day service.">
+<meta name="keywords" content="free scrap metal pickup, junk removal Monmouth County, appliance removal Ocean County, scrap pickup Asbury Park, free appliance pickup NJ Shore, contractor cleanout, estate cleanout, demolition scrap removal">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ajscrapnj.com">
+<meta property="og:title" content="A&J Scrap & Junk Removal | Monmouth & Ocean County NJ">
+<meta property="og:description" content="Free scrap metal & appliance pickup. Junk removal, cleanouts, and contractor scrap hauling across the Jersey Shore.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --rust: #C45A2D;
+    --rust-dark: #A34420;
+    --steel: #2B2D33;
+    --steel-light: #3A3D45;
+    --concrete: #E8E4DF;
+    --concrete-light: #F4F2EF;
+    --white: #FEFEFE;
+    --yellow: #E8B630;
+    --yellow-dim: #D4A62B;
+    --text: #1A1B1E;
+    --text-mid: #5A5C63;
+    --green: #3A8C4E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--steel);
+    border-bottom: 3px solid var(--rust);
+  }
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+  .logo span { color: var(--rust); }
+  .nav-cta {
+    background: var(--rust);
+    color: var(--white);
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--rust-dark); }
+
+  /* ── HERO ── */
+  .hero {
+    margin-top: 60px;
+    background: var(--steel);
+    position: relative;
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 40px,
+        rgba(196,90,45,0.04) 40px,
+        rgba(196,90,45,0.04) 80px
+      );
+  }
+  .hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--rust);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+  }
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--yellow);
+  }
+  .hero-sub {
+    font-size: 1.15rem;
+    color: #B0B2B8;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 520px;
+  }
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .btn-primary {
+    background: var(--rust);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, transform 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .btn-primary:hover { background: var(--rust-dark); transform: translateY(-1px); }
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    border: 2px solid rgba(255,255,255,0.25);
+    transition: border-color 0.2s;
+  }
+  .btn-secondary:hover { border-color: rgba(255,255,255,0.5); }
+
+  /* Hero right — stats card */
+  .hero-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+    padding: 2.5rem;
+    backdrop-filter: blur(10px);
+  }
+  .hero-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--yellow);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+  }
+  .free-list { list-style: none; }
+  .free-list li {
+    color: #D0D2D8;
+    font-size: 1.05rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .free-list li:last-child { border-bottom: none; }
+  .free-check {
+    width: 22px;
+    height: 22px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    color: white;
+  }
+
+  /* ── SERVICES ── */
+  .services {
+    padding: 5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    color: var(--rust);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+  }
+  .section-desc {
+    color: var(--text-mid);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 3rem;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .service-card {
+    background: var(--concrete-light);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--rust);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
+  .service-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.6rem;
+    color: var(--steel);
+  }
+  .service-card p {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+  .service-tag {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 4px;
+  }
+  .tag-free {
+    background: rgba(58,140,78,0.12);
+    color: var(--green);
+  }
+  .tag-paid {
+    background: rgba(232,182,48,0.15);
+    color: var(--yellow-dim);
+  }
+
+  /* ── AREA ── */
+  .area {
+    background: var(--concrete);
+    padding: 5rem 1.5rem;
+  }
+  .area-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .area-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+  .area-col h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    color: var(--rust);
+    margin-bottom: 1rem;
+  }
+  .town-list {
+    list-style: none;
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+  .town-list li {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    padding: 0.35rem 0;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .town-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--rust);
+    font-weight: 700;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how {
+    padding: 5rem 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  .step {
+    text-align: center;
+    position: relative;
+  }
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    color: var(--concrete);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .step h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--steel);
+    margin-bottom: 0.5rem;
+  }
+  .step p {
+    color: var(--text-mid);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  /* ── WHAT WE TAKE ── */
+  .materials {
+    background: var(--steel);
+    padding: 5rem 1.5rem;
+  }
+  .materials-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .materials .section-label { color: var(--yellow); }
+  .materials .section-title { color: var(--white); }
+  .materials .section-desc { color: #999; }
+  .mat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .mat-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+    transition: background 0.2s;
+  }
+  .mat-item:hover { background: rgba(255,255,255,0.08); }
+  .mat-item .mat-emoji { font-size: 1.8rem; margin-bottom: 0.5rem; }
+  .mat-item p {
+    color: #C8CAD0;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  /* ── CTA ── */
+  .cta {
+    background: var(--rust);
+    padding: 5rem 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 30px,
+      rgba(0,0,0,0.05) 30px,
+      rgba(0,0,0,0.05) 60px
+    );
+  }
+  .cta-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .cta h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    color: var(--white);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+  }
+  .cta p {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .cta-phone {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border: 3px solid var(--white);
+    border-radius: 10px;
+    transition: background 0.2s, color 0.2s;
+  }
+  .cta-phone:hover {
+    background: var(--white);
+    color: var(--rust);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--steel);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+  footer p {
+    color: #777;
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+  footer a {
+    color: #999;
+    text-decoration: none;
+  }
+
+  /* ── STRUCTURED DATA (hidden) ── */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.5rem;
+    }
+    .hero { min-height: auto; }
+    .hero-card { display: none; }
+    .area-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .town-list { columns: 2; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-secondary { text-align: center; justify-content: center; }
+    .cta-phone { font-size: 1.8rem; }
+  }
+
+  @media (max-width: 480px) {
+    .town-list { columns: 1; }
+    .mat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+
+<!-- Structured Data for Local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "A&J Scrap & Junk Removal",
+  "description": "Free scrap metal and appliance pickup, junk removal, estate cleanouts, and contractor scrap hauling in Monmouth and Ocean County, NJ.",
+  "url": "https://ajscrapnj.com",
+  "telephone": "(732) 555-0000",
+  "areaServed": [
+    {
+      "@type": "County",
+      "name": "Monmouth County",
+      "containedIn": "New Jersey"
+    },
+    {
+      "@type": "County",
+      "name": "Ocean County",
+      "containedIn": "New Jersey"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Asbury Park",
+    "addressRegion": "NJ",
+    "postalCode": "07712",
+    "addressCountry": "US"
+  },
+  "serviceType": ["Scrap Metal Pickup", "Junk Removal", "Appliance Removal", "Estate Cleanout", "Contractor Scrap Hauling", "Demolition Scrap Removal"],
+  "priceRange": "Free - $$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "07:00",
+    "closes": "18:00"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">A<span>&</span>J</a>
+    <a href="tel:+17325550000" class="nav-cta">📞 (732) 555-0000</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">Monmouth & Ocean County</div>
+      <h1>Free Scrap Metal <em>&</em> Appliance Pickup</h1>
+      <p class="hero-sub">Got an old washer, busted AC, copper pipes, or a pile of metal sitting in your yard? We'll come pick it up — for free. Serving the entire Jersey Shore area.</p>
+      <div class="hero-actions">
+        <a href="tel:+17325550000" class="btn-primary">📞 Call Now — It's Free</a>
+        <a href="#services" class="btn-secondary">See All Services</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>We Pick Up For Free</h3>
+      <ul class="free-list">
+        <li><span class="free-check">✓</span>Washers, Dryers & Dishwashers</li>
+        <li><span class="free-check">✓</span>AC Units & Water Heaters</li>
+        <li><span class="free-check">✓</span>Copper Pipe & Wiring</li>
+        <li><span class="free-check">✓</span>Stoves, Ovens & Fridges</li>
+        <li><span class="free-check">✓</span>Steel, Aluminum & Brass</li>
+        <li><span class="free-check">✓</span>Grills, Radiators & Car Parts</li>
+        <li><span class="free-check">✓</span>Fencing, Gutters & Siding</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-label">What We Do</div>
+  <h2 class="section-title">Scrap Pickup, Junk Removal & Cleanouts</h2>
+  <p class="section-desc">Whether you've got a single appliance or a full property to clear, we handle it all across Monmouth and Ocean County.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🔩</div>
+      <h3>Free Scrap Metal Pickup</h3>
+      <p>Old appliances, copper, aluminum, steel, brass — if it's metal, we'll come get it at no cost to you. Same-day pickup available.</p>
+      <span class="service-tag tag-free">Free Service</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏠</div>
+      <h3>Junk Removal</h3>
+      <p>Garage full of stuff? Yard cluttered? We haul away the junk you don't want — furniture, debris, mixed loads, you name it.</p>
+      <span class="service-tag tag-paid">Affordable Rates</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">📦</div>
+      <h3>Estate & Property Cleanouts</h3>
+      <p>Full property cleanouts for estates, rentals, and foreclosures. We sort, haul, and leave the place broom-clean.</p>
+      <span class="service-tag tag-paid">Get a Quote</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🏗️</div>
+      <h3>Contractor & Demo Scrap</h3>
+      <p>Plumbers, HVAC techs, electricians, roofers — we take your job site scrap off your hands so you can keep working.</p>
+      <span class="service-tag tag-free">Free Pickup</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="section-label">Simple</div>
+  <h2 class="section-title">How It Works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h3>Call or Text</h3>
+      <p>Tell us what you've got and where you are. Send a photo if you want a quick estimate.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h3>We Come to You</h3>
+      <p>We schedule a pickup — often same day. Monmouth and Ocean County, anywhere from the Bayshore to LBI.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h3>It's Gone</h3>
+      <p>We load, haul, and handle everything. Free for scrap metal. Fair flat rate for junk and cleanouts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE TAKE -->
+<section class="materials" id="materials">
+  <div class="materials-inner">
+    <div class="section-label">Materials</div>
+    <h2 class="section-title">What We Take</h2>
+    <p class="section-desc">If it's metal, we want it. Here's what we pick up most — but if you're not sure, just ask.</p>
+    <div class="mat-grid">
+      <div class="mat-item"><div class="mat-emoji">🔌</div><p>Copper Wire & Pipe</p></div>
+      <div class="mat-item"><div class="mat-emoji">❄️</div><p>AC Units & HVAC</p></div>
+      <div class="mat-item"><div class="mat-emoji">🫧</div><p>Washers & Dryers</p></div>
+      <div class="mat-item"><div class="mat-emoji">🍳</div><p>Stoves & Ovens</p></div>
+      <div class="mat-item"><div class="mat-emoji">🧊</div><p>Refrigerators</p></div>
+      <div class="mat-item"><div class="mat-emoji">🚿</div><p>Water Heaters</p></div>
+      <div class="mat-item"><div class="mat-emoji">🚗</div><p>Car Parts & Rims</p></div>
+      <div class="mat-item"><div class="mat-emoji">🔧</div><p>Cast Iron & Steel</p></div>
+      <div class="mat-item"><div class="mat-emoji">🏗️</div><p>Fencing & Gutters</p></div>
+      <div class="mat-item"><div class="mat-emoji">📻</div><p>Aluminum & Brass</p></div>
+      <div class="mat-item"><div class="mat-emoji">🔥</div><p>Grills & Fire Pits</p></div>
+      <div class="mat-item"><div class="mat-emoji">🛁</div><p>Cast Iron Tubs</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area" id="area">
+  <div class="area-inner">
+    <div class="section-label">Service Area</div>
+    <h2 class="section-title">Covering the Jersey Shore</h2>
+    <p class="section-desc">We serve all of Monmouth and Ocean County — from the Bayshore to Barnegat and everywhere in between.</p>
+    <div class="area-grid">
+      <div class="area-col">
+        <h3>Monmouth County</h3>
+        <ul class="town-list">
+          <li>Asbury Park</li>
+          <li>Neptune</li>
+          <li>Ocean Township</li>
+          <li>Long Branch</li>
+          <li>Red Bank</li>
+          <li>Freehold</li>
+          <li>Howell</li>
+          <li>Middletown</li>
+          <li>Hazlet</li>
+          <li>Keyport</li>
+          <li>Matawan</li>
+          <li>Marlboro</li>
+          <li>Manalapan</li>
+          <li>Tinton Falls</li>
+          <li>Wall Township</li>
+          <li>Belmar</li>
+          <li>Bradley Beach</li>
+          <li>Eatontown</li>
+        </ul>
+      </div>
+      <div class="area-col">
+        <h3>Ocean County</h3>
+        <ul class="town-list">
+          <li>Toms River</li>
+          <li>Lakewood</li>
+          <li>Brick</li>
+          <li>Jackson</li>
+          <li>Manchester</li>
+          <li>Berkeley Township</li>
+          <li>Lacey Township</li>
+          <li>Barnegat</li>
+          <li>Point Pleasant</li>
+          <li>Seaside Heights</li>
+          <li>Beachwood</li>
+          <li>Bayville</li>
+          <li>Stafford Township</li>
+          <li>Little Egg Harbor</li>
+          <li>Waretown</li>
+          <li>Long Beach Island</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <h2>Got Metal? Get Rid Of It Today.</h2>
+    <p>Call or text us now. Free scrap pickup, fast junk removal, and full cleanout services across Monmouth and Ocean County.</p>
+    <a href="tel:+17325550000" class="cta-phone">(732) 555-0000</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><strong>A&J Scrap & Junk Removal</strong><br>
+  Serving Monmouth & Ocean County, NJ<br>
+  <a href="tel:+17325550000">(732) 555-0000</a><br><br>
+  Free scrap metal pickup · Junk removal · Estate cleanouts · Contractor scrap hauling<br>
+  Asbury Park · Neptune · Toms River · Brick · Lakewood · Freehold · Long Branch · and all Shore towns<br><br>
+  &copy; 2026 A&J Scrap & Junk Removal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
